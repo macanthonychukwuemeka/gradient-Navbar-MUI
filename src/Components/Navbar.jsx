@@ -14,12 +14,13 @@ import React, { useState } from "react";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import DrawerComp from "./Drawer";
 // import { useTheme } from "@emotion/react";
-
+// MAke sure not to import emotion/react Usetheme while importing useTheme
 const Navbar = ({ links }) => {
+  const [value, setValue] = useState();
+
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   console.log(isMatch);
-  const [value, setValue] = useState();
 
   return (
     <AppBar
