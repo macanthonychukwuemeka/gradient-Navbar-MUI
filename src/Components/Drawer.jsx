@@ -38,7 +38,7 @@ const DrawerComp = ({ links }) => {
       </Drawer>
       <IconButton
         sx={{ marginLeft: "auto", color: "white" }}
-        //marginLeft: auto, to set the menubar to the left side of the screen
+        //marginLeft: auto, to set the menu-bar to the left side of the screen
         onClick={() => setIsOpen(!isOpen)}
       >
         <MenuRoundedIcon />
